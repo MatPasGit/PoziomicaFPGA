@@ -14,7 +14,31 @@ use ieee.std_logic_textio.all;
 LIBRARY std;
 use std.textio.all;
 
-(...)
+COMPONENT accschem
+   PORT( CLK	:	IN	STD_LOGIC; 
+          RST	:	IN	STD_LOGIC; 
+          SDA	:	OUT	STD_LOGIC; 
+          SCL	:	OUT	STD_LOGIC);
+   END COMPONENT;
+
+   SIGNAL CLK	:	STD_LOGIC;
+   SIGNAL RST	:	STD_LOGIC;
+   SIGNAL SDA	:	STD_LOGIC;
+   SIGNAL SCL	:	STD_LOGIC;
+
+BEGIN
+
+   UUT: accschem PORT MAP(
+		CLK => CLK, 
+		RST => RST, 
+		SDA => SDA, 
+		SCL => SCL
+   );
+
+CLK <= '0';
+		wait for 10 ns;
+		CLK <= '1';
+		wait for 10 ns ;
 
    --------------------------------------------------------------------
    --------------------------------------------------------------------

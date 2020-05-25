@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/jfaldasz/Projects/ADXL-I2C/top_top_sch_tb_isim_beh.exe" -prj "/home/jfaldasz/Projects/ADXL-I2C/top_top_sch_tb_beh.prj" "work.top_top_sch_tb" 

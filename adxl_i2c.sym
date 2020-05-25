@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="adxl_i2c">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-5-25T11:31:41</timestamp>
+    <pin polarity="Input" x="0" y="-416" name="I2C_FIFO_FULL" />
+    <pin polarity="Input" x="0" y="-352" name="I2C_FIFO_EMPTY" />
+    <pin polarity="Input" x="0" y="-288" name="I2C_Busy" />
+    <pin polarity="Input" x="0" y="-224" name="Reset" />
+    <pin polarity="Input" x="0" y="-160" name="Clk" />
+    <pin polarity="Input" x="0" y="-32" name="I2C_FIFO_DO(7:0)" />
+    <pin polarity="Output" x="544" y="-416" name="I2C_GO" />
+    <pin polarity="Output" x="544" y="-352" name="I2C_FIFO_PUSH" />
+    <pin polarity="Output" x="544" y="-288" name="I2C_FIFO_POP" />
+    <pin polarity="Output" x="544" y="-224" name="I2C_Address(7:0)" />
+    <pin polarity="Output" x="544" y="-160" name="I2C_Read_Cnt(3:0)" />
+    <pin polarity="Output" x="544" y="-96" name="I2C_FIFO_DI(7:0)" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="272" y="-456" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin I2C_FIFO_FULL" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin I2C_FIFO_EMPTY" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin I2C_Busy" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin Reset" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin Clk" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin I2C_FIFO_DO(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="472" y="-416" type="pin I2C_GO" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="472" y="-352" type="pin I2C_FIFO_PUSH" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="472" y="-288" type="pin I2C_FIFO_POP" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="472" y="-224" type="pin I2C_Address(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="472" y="-160" type="pin I2C_Read_Cnt(3:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="472" y="-96" type="pin I2C_FIFO_DI(7:0)" />
+        <rect width="416" x="64" y="-448" height="448" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <line x2="544" y1="-416" y2="-416" x1="480" />
+        <line x2="544" y1="-352" y2="-352" x1="480" />
+        <line x2="544" y1="-288" y2="-288" x1="480" />
+        <rect width="64" x="480" y="-236" height="24" />
+        <line x2="544" y1="-224" y2="-224" x1="480" />
+        <rect width="64" x="480" y="-172" height="24" />
+        <line x2="544" y1="-160" y2="-160" x1="480" />
+        <rect width="64" x="480" y="-108" height="24" />
+        <line x2="544" y1="-96" y2="-96" x1="480" />
+    </graph>
+</symbol>

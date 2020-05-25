@@ -1,0 +1,12 @@
+vhdtdtfi -lib work adxl_i2c.vhd -prj ADXL-I2C -o adxl_i2c.spl -module adxl_i2c -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adxl_i2c.spl /home/jfaldasz/Projects/ADXL-I2C/adxl_i2c.sym 
+vhdtdtfi -lib work adxl_i2c.vhd -prj ADXL-I2C -o adxl_i2c.spl -module adxl_i2c -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adxl_i2c.spl /home/jfaldasz/Projects/ADXL-I2C/adxl_i2c.sym 
+vhdtdtfi -lib work adxl_i2c.vhd -prj ADXL-I2C -o adxl_i2c.spl -module adxl_i2c -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adxl_i2c.spl /home/jfaldasz/Projects/ADXL-I2C/adxl_i2c.sym 
+vhdtdtfi -lib work adxl_i2c.vhd -prj ADXL-I2C -o adxl_i2c.spl -module adxl_i2c -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adxl_i2c.spl /home/jfaldasz/Projects/ADXL-I2C/adxl_i2c.sym 
+vhdtdtfi -lib work adxl_i2c.vhd -prj ADXL-I2C -o adxl_i2c.spl -module adxl_i2c -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adxl_i2c.spl /home/jfaldasz/Projects/ADXL-I2C/adxl_i2c.sym 
+vhdtdtfi -lib work adxl_i2c.vhd -prj ADXL-I2C -o adxl_i2c.spl -module adxl_i2c -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adxl_i2c.spl /home/jfaldasz/Projects/ADXL-I2C/adxl_i2c.sym 

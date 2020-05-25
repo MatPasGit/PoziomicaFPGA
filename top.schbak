@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan3e" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <blockdef name="I2C_Master">
+            <timestamp>2015-11-24T13:12:50</timestamp>
+            <rect width="336" x="64" y="-512" height="572" />
+            <line x2="0" y1="-480" y2="-480" x1="64" />
+            <rect width="64" x="0" y="-428" height="24" />
+            <line x2="0" y1="-416" y2="-416" x1="64" />
+            <rect width="64" x="0" y="-364" height="24" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <line x2="464" y1="-480" y2="-480" x1="400" />
+            <line x2="464" y1="-416" y2="-416" x1="400" />
+            <line x2="0" y1="-256" y2="-256" x1="64" />
+            <line x2="0" y1="-192" y2="-192" x1="64" />
+            <rect width="64" x="0" y="-140" height="24" />
+            <line x2="0" y1="-128" y2="-128" x1="64" />
+            <line x2="464" y1="-256" y2="-256" x1="400" />
+            <line x2="464" y1="-192" y2="-192" x1="400" />
+            <rect width="64" x="400" y="-140" height="24" />
+            <line x2="464" y1="-128" y2="-128" x1="400" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="0" y1="32" y2="32" x1="64" />
+            <line x2="464" y1="-32" y2="-32" x1="400" />
+            <line x2="464" y1="32" y2="32" x1="400" />
+        </blockdef>
+        <block symbolname="I2C_Master" name="XLXI_1">
+            <blockpin name="Go" />
+            <blockpin name="Address(7:0)" />
+            <blockpin name="ReadCnt(3:0)" />
+            <blockpin name="SDA" />
+            <blockpin name="SCL" />
+            <blockpin name="FIFO_Pop" />
+            <blockpin name="FIFO_Push" />
+            <blockpin name="FIFO_DI(7:0)" />
+            <blockpin name="FIFO_Empty" />
+            <blockpin name="FIFO_Full" />
+            <blockpin name="FIFO_DO(7:0)" />
+            <blockpin name="Reset" />
+            <blockpin name="Clk" />
+            <blockpin name="Busy" />
+            <blockpin name="NACK" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <instance x="2080" y="1552" name="XLXI_1" orien="R0">
+        </instance>
+    </sheet>
+</drawing>

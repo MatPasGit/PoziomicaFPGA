@@ -17,15 +17,19 @@
         <signal name="XLXN_9(7:0)" />
         <signal name="XLXN_10" />
         <signal name="Clk" />
-        <signal name="Reset" />
         <signal name="SDA" />
         <signal name="SCL" />
         <signal name="NACK" />
+        <signal name="Reset" />
+        <signal name="LED(7:0)" />
+        <signal name="START" />
         <port polarity="Input" name="Clk" />
-        <port polarity="Input" name="Reset" />
         <port polarity="BiDirectional" name="SDA" />
         <port polarity="BiDirectional" name="SCL" />
         <port polarity="Output" name="NACK" />
+        <port polarity="Input" name="Reset" />
+        <port polarity="Output" name="LED(7:0)" />
+        <port polarity="Input" name="START" />
         <blockdef name="I2C_Master">
             <timestamp>2015-11-24T13:12:50</timestamp>
             <rect width="336" x="64" y="-512" height="572" />
@@ -50,8 +54,10 @@
             <line x2="464" y1="32" y2="32" x1="400" />
         </blockdef>
         <blockdef name="adxl_i2c">
-            <timestamp>2020-5-25T11:31:41</timestamp>
-            <rect width="416" x="64" y="-448" height="448" />
+            <timestamp>2020-5-26T11:1:33</timestamp>
+            <line x2="0" y1="96" y2="96" x1="64" />
+            <rect width="64" x="480" y="20" height="24" />
+            <line x2="544" y1="32" y2="32" x1="480" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
@@ -68,6 +74,7 @@
             <line x2="544" y1="-160" y2="-160" x1="480" />
             <rect width="64" x="480" y="-108" height="24" />
             <line x2="544" y1="-96" y2="-96" x1="480" />
+            <rect width="416" x="64" y="-448" height="576" />
         </blockdef>
         <block symbolname="I2C_Master" name="XLXI_1">
             <blockpin signalname="XLXN_1" name="Go" />
@@ -87,6 +94,7 @@
             <blockpin signalname="NACK" name="NACK" />
         </block>
         <block symbolname="adxl_i2c" name="XLXI_2">
+            <blockpin signalname="START" name="START" />
             <blockpin signalname="XLXN_8" name="I2C_FIFO_FULL" />
             <blockpin signalname="XLXN_7" name="I2C_FIFO_EMPTY" />
             <blockpin signalname="XLXN_10" name="I2C_Busy" />
@@ -99,6 +107,7 @@
             <blockpin signalname="XLXN_4(7:0)" name="I2C_Address(7:0)" />
             <blockpin signalname="XLXN_5(3:0)" name="I2C_Read_Cnt(3:0)" />
             <blockpin signalname="XLXN_6(7:0)" name="I2C_FIFO_DI(7:0)" />
+            <blockpin signalname="LED(7:0)" name="LED_OUT(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -173,14 +182,6 @@
             <wire x2="1936" y1="1472" y2="1504" x1="1936" />
         </branch>
         <iomarker fontsize="28" x="672" y="1280" name="Clk" orien="R180" />
-        <branch name="Reset">
-            <wire x2="960" y1="1216" y2="1216" x1="672" />
-            <wire x2="1168" y1="1216" y2="1216" x1="960" />
-            <wire x2="960" y1="1216" y2="1472" x1="960" />
-            <wire x2="1776" y1="1472" y2="1472" x1="960" />
-            <wire x2="1776" y1="1408" y2="1472" x1="1776" />
-            <wire x2="2000" y1="1408" y2="1408" x1="1776" />
-        </branch>
         <iomarker fontsize="28" x="672" y="1216" name="Reset" orien="R180" />
         <branch name="SDA">
             <wire x2="2608" y1="960" y2="960" x1="2464" />
@@ -194,5 +195,23 @@
             <wire x2="2624" y1="1472" y2="1472" x1="2464" />
         </branch>
         <iomarker fontsize="28" x="2624" y="1472" name="NACK" orien="R0" />
+        <branch name="Reset">
+            <wire x2="800" y1="1216" y2="1216" x1="672" />
+            <wire x2="1168" y1="1216" y2="1216" x1="800" />
+            <wire x2="800" y1="1216" y2="1648" x1="800" />
+            <wire x2="1984" y1="1648" y2="1648" x1="800" />
+            <wire x2="2000" y1="1408" y2="1408" x1="1984" />
+            <wire x2="1984" y1="1408" y2="1648" x1="1984" />
+        </branch>
+        <branch name="LED(7:0)">
+            <wire x2="1728" y1="1472" y2="1472" x1="1712" />
+            <wire x2="1728" y1="1472" y2="1744" x1="1728" />
+        </branch>
+        <iomarker fontsize="28" x="1728" y="1744" name="LED(7:0)" orien="R90" />
+        <branch name="START">
+            <wire x2="1152" y1="1536" y2="1536" x1="336" />
+            <wire x2="1168" y1="1536" y2="1536" x1="1152" />
+        </branch>
+        <iomarker fontsize="28" x="336" y="1536" name="START" orien="R180" />
     </sheet>
 </drawing>

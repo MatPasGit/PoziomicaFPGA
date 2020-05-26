@@ -17,7 +17,9 @@ ARCHITECTURE behavioral OF top_top_sch_tb IS
           SDA	:	INOUT	STD_LOGIC; 
           NACK	:	OUT	STD_LOGIC; 
           Clk	:	IN	STD_LOGIC; 
-          Reset	:	IN	STD_LOGIC); 
+          Reset	:	IN	STD_LOGIC;
+			 START :  IN STD_LOGIC
+			 ); 
          -- Busy	:	OUT	STD_LOGIC);
    END COMPONENT;
 
@@ -26,7 +28,7 @@ ARCHITECTURE behavioral OF top_top_sch_tb IS
    SIGNAL NACK	:	STD_LOGIC;
    SIGNAL Clk	:	STD_LOGIC := '0';
    SIGNAL Reset	:	STD_LOGIC := '0';
-   --SIGNAL Busy	:	STD_LOGIC := '0';
+   SIGNAL START	:	STD_LOGIC := '1';
 
 BEGIN
 
@@ -35,11 +37,15 @@ BEGIN
 		Reset => Reset, 
 		SDA => SDA, 
 		SCL => SCL, 
-		NACK => NACK
+		NACK => NACK,
+		START =>START
    );
 	
 	
 	Clk <= not Clk after 10ns;
+	START <= not START after 300ns;
+	
+
 
  --------------------------------------------------------------------
    --------------------------------------------------------------------
